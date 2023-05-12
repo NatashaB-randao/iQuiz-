@@ -15,14 +15,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9mc-nL-Edw">
-                                <rect key="frame" x="79" y="233" width="217" height="104"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="9mc-nL-Edw">
+                                <rect key="frame" x="88" y="249" width="217" height="104"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-ID-TG8">
-                                <rect key="frame" x="86" y="390" width="221" height="72"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kYw-ID-TG8">
+                                <rect key="frame" x="64" y="395" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="0IF-hj-V9p"/>
+                                </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Iniciar Quiz">
@@ -32,6 +33,14 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.32156862749999998" green="0.1176470588" blue="0.76078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kYw-ID-TG8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="1sv-8l-9Pe"/>
+                            <constraint firstItem="kYw-ID-TG8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JGK-CI-WfG"/>
+                            <constraint firstItem="kYw-ID-TG8" firstAttribute="top" secondItem="9mc-nL-Edw" secondAttribute="bottom" constant="42" id="YIb-G8-2c5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kYw-ID-TG8" secondAttribute="trailing" constant="64" id="c6N-cT-sJh"/>
+                            <constraint firstItem="kYw-ID-TG8" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="e6b-eH-kDj"/>
+                            <constraint firstItem="9mc-nL-Edw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lce-l5-wP7"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
