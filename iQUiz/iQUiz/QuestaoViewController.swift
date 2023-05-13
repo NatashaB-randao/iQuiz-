@@ -28,12 +28,16 @@ class QuestaoViewController: UIViewController {
         if numeroQuestao < questoes.count - 1{
             numeroQuestao += 1
             Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(configurarQuestao), userInfo: nil, repeats: false)
+        } else {
+            navegaParaTelaDesempenho()
         }
         
 
     }
     
-    
+    func navegaParaTelaDesempenho() {
+        performSegue(withIdentifier: "IrParaTelaDesempenho", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +65,9 @@ class QuestaoViewController: UIViewController {
         }
     }
 
-   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let desempenhoVC = segue.destination as? DesempenhoViewController else { return }
+        desempenhoVC.pontuacao = pontuacao
+    }
 
 }

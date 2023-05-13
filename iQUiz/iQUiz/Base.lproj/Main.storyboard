@@ -136,6 +136,7 @@
                     <connections>
                         <outlet property="tituloQuestaoLabel" destination="xsj-Fu-CWb" id="473-aW-FbW"/>
                         <outletCollection property="botoesRespostas" destination="AfQ-vk-e55" collectionClass="NSMutableArray" id="Hsm-mv-vrG"/>
+                        <segue destination="QiU-B0-7Oa" kind="show" identifier="IrParaTelaDesempenho" id="1e6-gN-x11"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O5F-lW-xgS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -147,29 +148,29 @@
             <objects>
                 <viewController id="QiU-B0-7Oa" customClass="DesempenhoViewController" customModule="iQUiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lKY-m3-gIu">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você finalizou o iQuiz!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uHs-b8-LBQ">
-                                <rect key="frame" x="64" y="171" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="112" width="265" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Você acertou 2 de 10 questões" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cIJ-Ov-Srp">
-                                <rect key="frame" x="64" y="319.66666666666669" width="265" height="76.666666666666686"/>
+                                <rect key="frame" x="64" y="260.66666666666669" width="265" height="76.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Percentual final: 20%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bI6-uq-2jE">
-                                <rect key="frame" x="64" y="468.33333333333331" width="265" height="32"/>
+                                <rect key="frame" x="64" y="409.33333333333331" width="265" height="32"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4NJ-vt-9J2">
-                                <rect key="frame" x="64" y="572.33333333333337" width="265" height="62"/>
+                                <rect key="frame" x="64" y="513.33333333333337" width="265" height="62"/>
                                 <color key="backgroundColor" red="0.4549019608" green="0.1960784314" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="62" id="8ZE-8f-5g2"/>
@@ -201,6 +202,7 @@
                             <constraint firstItem="cIJ-Ov-Srp" firstAttribute="leading" secondItem="eXe-7U-FC9" secondAttribute="leading" constant="64" id="vbM-bk-1Bn"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="FkY-iS-uPM"/>
                     <connections>
                         <outlet property="botaoReiniciarQuiz" destination="4NJ-vt-9J2" id="SV5-gu-e6F"/>
                         <outlet property="percentualLabel" destination="bI6-uq-2jE" id="qsD-Tn-emv"/>
@@ -231,6 +233,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="1e6-gN-x11"/>
         <segue reference="gsk-XZ-MOo"/>
     </inferredMetricsTieBreakers>
     <resources>
