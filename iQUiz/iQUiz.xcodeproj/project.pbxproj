@@ -43,6 +43,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DEB2E2F52A100B5800451BFE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF940B2A0E99D5000AE282 /* QuestaoViewController.swift */,
+				DEB2E2F32A0FF4F500451BFE /* DesempenhoViewController.swift */,
+				DEEF93FB2A0E9095000AE282 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		DEB2E2F62A100BA100451BFE /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				DEEF940D2A0EA580000AE282 /* Questao.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
 		DEEF93EB2A0E9095000AE282 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +80,14 @@
 		DEEF93F62A0E9095000AE282 /* iQUiz */ = {
 			isa = PBXGroup;
 			children = (
+				DEB2E2F62A100BA100451BFE /* Modelo */,
+				DEB2E2F52A100B5800451BFE /* ViewController */,
 				DEEF93F72A0E9095000AE282 /* AppDelegate.swift */,
 				DEEF93F92A0E9095000AE282 /* SceneDelegate.swift */,
-				DEEF93FB2A0E9095000AE282 /* ViewController.swift */,
 				DEEF93FD2A0E9095000AE282 /* Main.storyboard */,
 				DEEF94002A0E9096000AE282 /* Assets.xcassets */,
 				DEEF94022A0E9096000AE282 /* LaunchScreen.storyboard */,
 				DEEF94052A0E9096000AE282 /* Info.plist */,
-				DEEF940B2A0E99D5000AE282 /* QuestaoViewController.swift */,
-				DEEF940D2A0EA580000AE282 /* Questao.swift */,
-				DEB2E2F32A0FF4F500451BFE /* DesempenhoViewController.swift */,
 			);
 			path = iQUiz;
 			sourceTree = "<group>";
