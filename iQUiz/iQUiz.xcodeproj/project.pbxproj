@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE5DDCA12A12964600B37DFB /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5DDCA02A12964600B37DFB /* UIColor+.swift */; };
 		DEB2E2F42A0FF4F500451BFE /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEB2E2F32A0FF4F500451BFE /* DesempenhoViewController.swift */; };
 		DEEF93F82A0E9095000AE282 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF93F72A0E9095000AE282 /* AppDelegate.swift */; };
 		DEEF93FA2A0E9095000AE282 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEEF93F92A0E9095000AE282 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DE5DDCA02A12964600B37DFB /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		DEB2E2F32A0FF4F500451BFE /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
 		DEEF93F42A0E9095000AE282 /* iQUiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQUiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEEF93F72A0E9095000AE282 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DE5DDC9F2A12962000B37DFB /* Extensões */ = {
+			isa = PBXGroup;
+			children = (
+				DE5DDCA02A12964600B37DFB /* UIColor+.swift */,
+			);
+			name = "Extensões";
+			path = "Extensões";
+			sourceTree = "<group>";
+		};
 		DEB2E2F52A100B5800451BFE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +91,7 @@
 		DEEF93F62A0E9095000AE282 /* iQUiz */ = {
 			isa = PBXGroup;
 			children = (
+				DE5DDC9F2A12962000B37DFB /* Extensões */,
 				DEB2E2F62A100BA100451BFE /* Modelo */,
 				DEB2E2F52A100B5800451BFE /* ViewController */,
 				DEEF93F72A0E9095000AE282 /* AppDelegate.swift */,
@@ -169,6 +181,7 @@
 				DEEF940E2A0EA580000AE282 /* Questao.swift in Sources */,
 				DEB2E2F42A0FF4F500451BFE /* DesempenhoViewController.swift in Sources */,
 				DEEF940C2A0E99D5000AE282 /* QuestaoViewController.swift in Sources */,
+				DE5DDCA12A12964600B37DFB /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
