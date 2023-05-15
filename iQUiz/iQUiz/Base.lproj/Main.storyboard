@@ -136,6 +136,8 @@
                     <connections>
                         <outlet property="tituloQuestaoLabel" destination="xsj-Fu-CWb" id="473-aW-FbW"/>
                         <outletCollection property="botoesRespostas" destination="AfQ-vk-e55" collectionClass="NSMutableArray" id="Hsm-mv-vrG"/>
+                        <outletCollection property="botoesRespostas" destination="pZI-KD-9uC" collectionClass="NSMutableArray" id="kJd-tv-T8e"/>
+                        <outletCollection property="botoesRespostas" destination="KXk-g1-oyE" collectionClass="NSMutableArray" id="auv-6n-DrO"/>
                         <segue destination="QiU-B0-7Oa" kind="show" identifier="IrParaTelaDesempenho" id="1e6-gN-x11"/>
                     </connections>
                 </viewController>

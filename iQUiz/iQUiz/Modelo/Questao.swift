@@ -24,4 +24,5 @@ let questoes: [Questao] = [
     Questao(titulo: "Em que idade se passa Os Anéis do Poder?", respostas: ["A primeira era", "A segunda era", "A terceira era"], respostaCorreta: 1),
     Questao(titulo: "Em que ano foi lançado o filme The Judge?", respostas: ["2015", "2008", "2014"], respostaCorreta: 2),
     Questao(titulo: "Em que ano foi lançado o filme Sherlock Holmes?", respostas: ["2008", "2009","2016",], respostaCorreta: 1),
+    
 ]

@@ -14,7 +14,15 @@ class QuestaoViewController: UIViewController {
 
     @IBOutlet weak var tituloQuestaoLabel: UILabel!
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        configurarLayout()
+        configurarQuestao()
+    }
+    
+    
     @IBOutlet var botoesRespostas: [UIButton]!
+    
     @IBAction func respostaBotaoPressionado(_ sender: UIButton) {
         let usuarioAcertouResposta = questoes[numeroQuestao].respostaCorreta == sender.tag
         
@@ -39,12 +47,7 @@ class QuestaoViewController: UIViewController {
         performSegue(withIdentifier: "IrParaTelaDesempenho", sender: nil)
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        configurarLayout()
-        configurarQuestao()
-    }
+  
     
     func configurarLayout() {
         navigationItem.hidesBackButton = true
@@ -59,9 +62,10 @@ class QuestaoViewController: UIViewController {
     @objc func configurarQuestao() {
         tituloQuestaoLabel.text = questoes[numeroQuestao].titulo
         for botao in botoesRespostas {
+            botao.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
             let tituloBotao = questoes[numeroQuestao].respostas[botao.tag]
             botao.setTitle(tituloBotao, for: .normal)
-            botao.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
+            
         }
     }
 
